@@ -77,3 +77,15 @@ header{
     color: #333;
     font-size: 1em;
 }
+
+
+
+
+
+.post-body{
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
