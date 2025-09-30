@@ -7,6 +7,7 @@
     <title>Add Post</title>
 </head>
 <body>
+
     <header class="navbar">
         <div class="links">
         <h1>
@@ -20,17 +21,36 @@
          </div>
     </header>
 
-    <main class="post-container">
+    <main class="post-container" id="addPost-container">
+
         <div class="post">
-            <label for="post">Post body</label>
-            <input type="text" id="textArea" name="text" placeholder="textArea">
-            <br/>
-            <br/>
-            <label for="post">Select file</label>
-            <button>Choose File</button>
-            <br/>
-            <br/>
-            <button>Create post</button>
+            <div class="split-div">
+                <div class="left-div">
+                    <p>
+                        Post<br>
+                        body
+                    </p>
+                </div>
+                <div class="right-div">
+                    <textarea id="text-area" name="text" placeholder="text area"></textarea>
+                </div>
+            </div>
+                <div class="split-div">
+                    <div class="left-div">
+                        <p>
+                            Select<br>
+                            file
+                        </p>
+                    </div>
+                    <div class="right-div">
+                        <button class="addPost-button" id="button-file">Choose File</button>
+                    </div>
+                </div>
+            <footer>
+                <form action="index.html">
+                    <button class="addPost-button" type="submit" id="button-post">Create post</button>
+                </form>
+            </footer>
         </div>
     </main>  
 </body>
