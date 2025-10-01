@@ -5,53 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Add Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="links">
+<header>
+    <nav>
         <h1>
-        <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
+            <svg class="element-separator">
+                <rect width="0.125rem" height="2rem"></rect>
+            </svg>
+            <a href="addPost.html">Add Post</a>
         </h1>
-         </div>
-         <div>
-            <a href="login.html">
-            <img class="profile" src="res/img/dog.jpg" alt="Profile picture">
-            </a>
-         </div>
-    </header>
-
-    <main class="post-container" id="addPost-container">
-
-        <div class="post">
-            <div class="split-div">
-                <div class="left-div">
-                    <p>
-                        Post<br>
-                        body
-                    </p>
-                </div>
-                <div class="right-div">
-                    <textarea id="text-area" name="text" placeholder="text area"></textarea>
-                </div>
+        <a href="login.html">
+            <img class="profile-vector" src="res/img/profile.png" alt="Profile picture">
+        </a>
+    </nav>
+</header>
+<main class="post-container" id="addPost-container">
+    <div class="post">
+        <div class="split-div">
+            <div class="left-div">
+                <p>
+                    Post<br>
+                    body
+                </p>
             </div>
-                <div class="split-div">
-                    <div class="left-div">
-                        <p>
-                            Select<br>
-                            file
-                        </p>
-                    </div>
-                    <div class="right-div">
-                        <button class="addPost-button" id="button-file">Choose File</button>
-                    </div>
-                </div>
-            <footer>
-                <form action="index.html">
-                    <button class="addPost-button" type="submit" id="button-post">Create post</button>
-                </form>
-            </footer>
+            <div class="right-div">
+                <textarea id="text-area" name="text" placeholder="text area"></textarea>
+            </div>
         </div>
-    </main>  
+        <div class="split-div">
+            <div class="left-div">
+                <p>
+                    Select<br>
+                    file
+                </p>
+            </div>
+            <div class="right-div">
+                <button class="addPost-button" id="button-file">Choose File</button>
+            </div>
+        </div>
+        <footer>
+            <form action="index.html">
+                <button class="addPost-button" type="submit" id="button-post">Create post</button>
+            </form>
+        </footer>
+    </div>
+</main>
 </body>
 </html>
