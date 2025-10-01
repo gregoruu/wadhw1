@@ -18,6 +18,7 @@ nav {
     min-width: 200px;
 }
 
+/*Child Selector */
 nav > h1 {
     display: flex;
     justify-content: left;
@@ -135,10 +136,12 @@ svg.element-separator {
     transition: transform 0.2s ease-in;
 }
 
+ /*pseudo-class*/
 .post-image:hover {
     transform: scale(1.03);
 }
 
+/*class selector*/
 .post-text {
     margin-top: 0;
     color: #333;
@@ -163,7 +166,8 @@ button {
     margin-top: 40px;
 }
 
-#login-container h2 {
+/*General Sibling Selector */
+ a ~ h2 {
     margin: 0;
     padding: 0.25rem;
     text-wrap: balance;
@@ -225,6 +229,7 @@ button {
     padding-right: 10px;
 }
 
+/*Descendant Selector */
 .left-div p {
     color: gray;
 }
@@ -241,13 +246,13 @@ button {
     min-height: 100px;
 }
 
+/*ID selector */
 #button-file {
     background-color: gray;
 }
 
-.split-div + footer {
+/*Adjacent Sibling Selector */
+.split-div + .submit-post {
     text-align: center;
     margin-top: 20px;
 }
-
-
