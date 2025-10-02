@@ -8,6 +8,10 @@
     font-family: "Chocolate Classical Sans", sans-serif;
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -24,7 +28,6 @@ nav > h1 {
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
 }
 
 nav h1 > a {
@@ -136,7 +139,7 @@ svg.element-separator {
     transition: transform 0.2s ease-in;
 }
 
- /*pseudo-class*/
+/*pseudo-class*/
 .post-image:hover {
     transform: scale(1.03);
 }
@@ -166,18 +169,22 @@ button {
     margin-top: 40px;
 }
 
-/*General Sibling Selector */
- a ~ h2 {
-    margin: 0;
+#login-container > h2 {
     padding: 0.25rem;
-    text-wrap: balance;
+    text-wrap: wrap;
+    align-items: center;
     text-align: center;
 }
 
-.login-prompts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*General Sibling Selector */
+#login-container form ~ h2 {
+    margin-top: 0.25rem;
+    font-size: 1.25rem;
+}
+
+#login-container a {
+    text-decoration: none;
+    text-align: center;
 }
 
 .login-form {
@@ -201,14 +208,6 @@ button {
     margin: 0.25rem;
     padding: 0.5rem;
     max-width: 80%;
-}
-
-#login-container a {
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1rem;
-    transition: all 0.1s ease-in-out;
-    border: 2px solid transparent;
 }
 
 #addPost-container {
