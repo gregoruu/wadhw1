@@ -14,10 +14,6 @@
     <nav>
         <h1>
             <a href="index.html">Home</a>
-            <svg class="element-separator">
-                <rect width="0.125rem" height="2rem"></rect>
-            </svg>
-            <a href="addPost.html">Add Post</a>
         </h1>
         <a href="login.html">
             <img class="profile-vector" src="res/img/profile.png" alt="Profile picture">
@@ -26,12 +22,10 @@
 </header>
 <main class="post-container">
     <div class="post" id="login-container">
-        <div class="login-prompts">
-            <h2>Welcome to PostIt</h2>
-            <a href="index.html"><h2>Create an account</h2></a>
-            <h2>or</h2>
-            <h2>Please log in</h2>
-        </div>
+        <h2>Welcome to PostIt</h2>
+        <h2><a href="index.html">Create an account</a></h2>
+        <h2>or</h2>
+        <h2>Please log in</h2>
         <form class="login-form" action="index.html" method="post">
             <label for="email">
                 <input type="email" id="email" name="email" placeholder="Email" required>
@@ -41,7 +35,7 @@
             </label>
             <input type="submit" value="Log in">
         </form>
-        <a href="index.html"><h2>Forgot password</h2></a>
+        <h2><a href="index.html">Forgot password</a></h2>
     </div>
 </main>
 </body>
