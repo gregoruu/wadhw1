@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Gregor",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-23T10:30:00Z",
+    "image": "res/img/post1.jpg",
+    "text": "Tartu 2022"
+  },
+  {
+    "id": 2,
+    "author": "Liis",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-22T09:15:00Z",
+    "image": null,
+    "text": "Anyone knows in which room is the lab today?"
+  },
+  {
+    "id": 3,
+    "author": "Kati",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-21T14:00:00Z",
+    "image": "res/img/post2.jpg",
+    "text": "Tallinn 2022"
+  },
+  {
+    "id": 4,
+    "author": "Martin",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-20T11:45:00Z",
+    "image": null,
+    "text": "Just a post"
+  },
+  {
+    "id": 5,
+    "author": "Anu",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-19T08:00:00Z",
+    "image": "res/img/post3.jpg",
+    "text": "Test"
+  },
+  {
+    "id": 6,
+    "author": "Marek",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-18T18:20:00Z",
+    "image": null,
+    "text": "Hello from Marek"
+  },
+  {
+    "id": 7,
+    "author": "Ene",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-17T07:05:00Z",
+    "image": "res/img/post4.jpg",
+    "text": "A scenic view"
+  },
+  {
+    "id": 8,
+    "author": "Priit",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-16T21:30:00Z",
+    "image": null,
+    "text": "Night thoughts"
+  },
+  {
+    "id": 9,
+    "author": "Signe",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-15T12:00:00Z",
+    "image": "res/img/post5.jpg",
+    "text": "Weekend trip"
+  },
+  {
+    "id": 10,
+    "author": "Oskar",
+    "profileImage": "res/img/profile.png",
+    "date": "2025-09-14T16:10:00Z",
+    "image": null,
+    "text": "Short update"
+  }
+]
