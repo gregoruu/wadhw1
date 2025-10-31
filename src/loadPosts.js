@@ -1,6 +1,7 @@
 window.onload = function() {
     const container = document.querySelector('.post-container');
-    fetch('https://api.jsonsilo.com/demo/a19395a6-767f-4fcc-ba68-e1f1408074bc')
+    //fetch('https://api.jsonsilo.com/demo/a19395a6-767f-4fcc-ba68-e1f1408074bc')
+    fetch('res/posts.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.json();
