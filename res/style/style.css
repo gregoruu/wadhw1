@@ -77,6 +77,7 @@ svg.element-separator {
     width: 64px;
     height: 64px;
     margin: 0.25rem;
+    background-color: #aaaaaa;
     border-radius: 50%;
     border: 2px solid #333333;
     box-shadow: #7a7a7a 0 1px 5px;
@@ -84,20 +85,6 @@ svg.element-separator {
 }
 
 .profile:hover {
-    box-shadow: #8a8a8a 0 2px 6px;
-    border: 2px solid #484848;
-}
-
-.profile-vector {
-    background-color: #aaaaaa;
-    margin: 0.25rem;
-    border-radius: 50%;
-    border: 2px solid #333333;
-    box-shadow: #7a7a7a 0 1px 5px;
-    transition: 100ms ease-in-out;
-}
-
-.profile-vector:hover {
     box-shadow: #8a8a8a 0 2px 6px;
     border: 2px solid #484848;
 }

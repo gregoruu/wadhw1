@@ -16,7 +16,6 @@ window.onload = function () {
 
                 const profileImg = this.document.createElement('img');
 
-                profileImg.className = 'profile-vector';
                 profileImg.className = 'profile';
                 profileImg.src = post.profileImage;
                 profileImg.alt = 'Profile picture';
