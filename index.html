@@ -17,17 +17,21 @@
             <a href="index.html">Home</a>
             <a href="addPost.html">Add Post</a>
         </h1>
-        <a href="login.html">
-            <img class="profile" src="res/img/profile.png" alt="Profile picture">
-        </a>
+        <div id="profileSection">
+            <img class="profile" id="profileButton" src="res/img/profile.png" alt="Profile picture">
+            <div id="profileDropdown">
+                <p id="profileName">John Smith</p>
+                <p id="email"></p>
+                <a class="morphButton" id="logoutButton">Logout</a>
+            </div>
+        </div>
     </nav>
 </header>
-
 <main class="post-container">
 </main>
-
 <footer>
 </footer>
 <script src="src/loadPosts.js"></script>
+<script src="src/profileDropdown.js"></script>
 </body>
 </html>

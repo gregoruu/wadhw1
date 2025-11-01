@@ -17,7 +17,7 @@
             <a href="index.html">Home</a>
         </h1>
         <a href="login.html">
-            <img class="profile" src="res/img/profile.png" alt="Profile picture">
+            <img class="profile" id="profileButton" src="res/img/profile.png" alt="Profile picture">
         </a>
     </nav>
 </header>
@@ -27,7 +27,7 @@
         <h2><a href="index.html">Create an account</a></h2>
         <h2>or</h2>
         <h2>Please log in</h2>
-        <form class="login-form" action="index.html" method="post">
+        <form id="login-form" action="index.html" method="post">
             <label for="email">
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </label>
@@ -39,5 +39,8 @@
         <h2><a href="index.html">Forgot password</a></h2>
     </div>
 </main>
+<footer>
+</footer>
+<script src="src/loginForm.js"></script>
 </body>
 </html>

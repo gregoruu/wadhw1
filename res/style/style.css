@@ -39,24 +39,26 @@ nav > h1 {
     gap: 1.5rem;
 }
 
-nav h1 > a {
+nav h1 > a, .morphButton {
     color: #deefff;
     text-decoration: none;
+    text-align: center;
     padding: 0.5rem;
     text-wrap: nowrap;
     transition: all 0.1s ease-in-out;
     border: 1px solid transparent;
+    user-select: none;
 
     border-radius: 1rem;
     background: #4D6988;
     box-shadow:  0.25rem 0.25rem 0.25rem #2e3f52, -0.25rem -0.25rem 0.5rem #6c93be;
 }
 
-nav h1 > a:hover {
+nav h1 > a:hover, .morphButton:hover {
     border: 1px solid #a0b5c9;
 }
 
-nav h1 > a:active {
+nav h1 > a:active, .morphButton:active {
     box-shadow: inset 0.25rem 0.25rem 1rem #2e3f52, -0.25rem -0.25rem 1rem #6c93be;
 }
 
@@ -103,6 +105,39 @@ svg.element-separator {
 .profile:hover {
     box-shadow: #8a8a8a 0 2px 6px;
     border: 2px solid #484848;
+}
+
+#profileSection {
+    position: relative;
+}
+
+#profileDropdown {
+    display: none;
+}
+
+#profileDropdown.open {
+    max-width: 70vw;
+    position: absolute;
+    top: calc(100% + 2rem);
+    right: -1rem;
+    display: flex;
+    flex-direction: column;
+
+    color: #deefff;
+    text-decoration: none;
+    padding: 1rem;
+    text-wrap: nowrap;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid transparent;
+
+    border-radius: 1rem;
+    background: #4D6988;
+    box-shadow:  0.25rem 0.25rem 0.25rem #2e3f52, -0.25rem -0.25rem 0.5rem #6c93be;
+}
+
+#profileDropdown > .morphButton {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .post {
@@ -189,7 +224,7 @@ button {
     text-align: center;
 }
 
-.login-form {
+#login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,14 +232,14 @@ button {
     padding: 0.5rem;
 }
 
-.login-form label {
+#login-form label {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.login-form input {
+#login-form input {
     font-size: 1rem;
     min-width: 50%;
     margin: 0.25rem;
