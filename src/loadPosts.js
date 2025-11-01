@@ -1,6 +1,6 @@
-window.onload = function() {
+window.onload = function () {
     const container = document.querySelector('.post-container');
-    //fetch('https://api.jsonsilo.com/demo/a19395a6-767f-4fcc-ba68-e1f1408074bc')
+    //fetch('https://api.jsonsilo.com/public/26a60fee-ba28-425f-864e-aead2a78c23e')
     fetch('res/posts.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -24,7 +24,6 @@ window.onload = function() {
                 const dateSpan = document.createElement('span');
                 dateSpan.className = 'post-date';
                 dateSpan.textContent = post.date;
-                
 
 
                 header.appendChild(profileImg);
@@ -48,10 +47,10 @@ window.onload = function() {
                 container.appendChild(postDiv);
             });
         })
-         .catch(err => {
-        let errDiv = document.createElement("div");
-        errDiv.className = 'post';
-        errDiv.innerText = err;
-        document.body.appendChild(errDiv);
+        .catch(err => {
+            let errDiv = document.createElement("div");
+            errDiv.className = 'post';
+            errDiv.innerText = err;
+            document.body.appendChild(errDiv);
         })
 };
