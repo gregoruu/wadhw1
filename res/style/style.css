@@ -8,6 +8,10 @@
     font-family: "Chocolate Classical Sans", sans-serif;
 }
 
+body {
+    background: linear-gradient(to top, rgb(87, 50, 66) 0%, rgb(77, 105, 136) 100%) fixed;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -16,10 +20,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(211, 210, 210);
-    border-radius: 1rem;
     padding: 1rem;
     min-width: 200px;
+    margin: 2rem;
+    gap: 1.5rem;
+
+    border-radius: 1rem;
+    background: #4D6988;
+    box-shadow:  0.5rem 0.5rem 1rem #2e3f52, -0.5rem -0.5rem 1rem #6c93be;
 }
 
 /*Child Selector */
@@ -28,21 +36,28 @@ nav > h1 {
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 nav h1 > a {
-    color: black;
+    color: #deefff;
     text-decoration: none;
-    border-radius: 1rem;
     padding: 0.5rem;
     text-wrap: nowrap;
     transition: all 0.1s ease-in-out;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
+
+    border-radius: 1rem;
+    background: #4D6988;
+    box-shadow:  0.25rem 0.25rem 0.25rem #2e3f52, -0.25rem -0.25rem 0.5rem #6c93be;
 }
 
 nav h1 > a:hover {
-    background-color: rgb(176, 176, 176);
-    border: 2px solid #d9d9d9;
+    border: 1px solid #a0b5c9;
+}
+
+nav h1 > a:active {
+    box-shadow: inset 0.25rem 0.25rem 1rem #2e3f52, -0.25rem -0.25rem 1rem #6c93be;
 }
 
 svg.element-separator {
@@ -82,6 +97,7 @@ svg.element-separator {
     border: 2px solid #333333;
     box-shadow: #7a7a7a 0 1px 5px;
     transition: 100ms ease-in-out;
+    object-fit: cover;
 }
 
 .profile:hover {
@@ -113,7 +129,7 @@ svg.element-separator {
 }
 
 .post-date {
-    color: #6d6d6d;
+    color: #2c2c2c;
     font-size: 1em;
 }
 
@@ -153,7 +169,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
 }
 
 #login-container > h2 {
@@ -195,10 +210,6 @@ button {
     margin: 0.25rem;
     padding: 0.5rem;
     max-width: 80%;
-}
-
-#addPost-container {
-    margin-top: 40px;
 }
 
 .split-div {
